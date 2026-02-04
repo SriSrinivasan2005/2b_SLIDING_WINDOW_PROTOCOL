@@ -19,7 +19,6 @@ print("Server listening...")
 conn, addr=s.accept()
 print(f"Connected to {addr}")
 
-
 while True:
     frames = conn.recv(1024).decode()
     if not frames:
